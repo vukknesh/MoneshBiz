@@ -6,28 +6,43 @@ export default class MyContent extends Component {
   constructor() {
     super();
     this.state = {
-      users: []
+      posts: []
     };
   }
   componentDidMount() {
     axios
-      .get("http://localhost:5000/api/users")
+      .get("https://jsonplaceholder.typicode.com/posts")
       .then(res => res.data)
       .then(data => {
-        this.setState({ users: data });
+        this.setState({ posts: data });
       });
   }
+  handleDelete = id => {
+    this.setState({
+      posts: this.state.posts.filter(post => post.id !== id)
+    });
+  };
   render() {
-    const { users } = this.state;
+    const { posts } = this.state;
     let conteudo;
 
-    if (users === null) {
+    if (posts === null) {
       conteudo = <Spinner />;
     } else {
-      conteudo = users.map(user => (
-        <div>
-          <h1>{user.name}</h1>
-          <p>{user.email}</p>
+      conteudo = posts.map(post => (
+        <div key={post.id} className="card">
+          <div className="card-header">{post.title}</div>
+          <div className="card-body">
+            <h5 className="card-title">{post.title}</h5>
+            <p className="card-text">{post.body}</p>
+            <button
+              onClick={this.handleDelete.bind(this, post.id)}
+              className="btn btn-danger"
+            >
+              {" "}
+              delete
+            </button>
+          </div>
         </div>
       ));
     }

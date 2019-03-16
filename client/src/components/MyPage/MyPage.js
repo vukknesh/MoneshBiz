@@ -5,12 +5,12 @@ import MyContent from "./MyContent";
 export default class MyPage extends Component {
   render() {
     return (
-      <div class="container" style={pageStyle}>
-        <div className="row">
-          <div class="bg-secondary w-25 border border-primary rounded">
+      <div style={pageStyle}>
+        <div className="row h-100">
+          <div className="w-25 border">
             <MyMenu />
           </div>
-          <div class="bg-warning w-75 border border-secondary rounded">
+          <div className="w-75">
             <MyContent />
           </div>
         </div>
@@ -20,5 +20,6 @@ export default class MyPage extends Component {
 }
 
 const pageStyle = {
-  height: "80vh"
+  height: "100%",
+  width: "100%"
 };

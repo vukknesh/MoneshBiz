@@ -2,27 +2,27 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
+    <ul className="nav justify-content-center position-relative">
+      <li className="nav-item">
+        <a className="nav-link active" href="#">
           Active
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li className="nav-item">
+        <a className="nav-link" href="#">
           Link
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
+      <li className="nav-item">
+        <a className="nav-link" href="#">
           Link
         </a>
       </li>
-      <li class="nav-item">
+      <li className="nav-item">
         <a
-          class="nav-link disabled"
+          className="nav-link disabled"
           href="#"
-          tabindex="-1"
+          tabIndex="-1"
           aria-disabled="true"
         >
           Disabled

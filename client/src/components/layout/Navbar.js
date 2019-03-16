@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
-          <a className="navbar-brand" href="#">
-            Monesh.com
-          </a>
+          <Link to="/landing">
+            <div className="navbar-brand">Monesh.com</div>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,15 +24,20 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
-                </a>
+                <Link to="/my-page">
+                  <div className="nav-link" href="#">
+                    My page <span className="sr-only">(current)</span>
+                  </div>
+                </Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
-              </li>
+              <Link to="/guide">
+                <li className="nav-item">
+                  <div className="nav-link" href="#">
+                    Guide
+                  </div>
+                </li>
+              </Link>
+
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -61,27 +67,25 @@ class Navbar extends Component {
                 <a
                   className="nav-link disabled"
                   href="#"
-                  tabindex="-1"
+                  tabIndex="-1"
                   aria-disabled="true"
                 >
                   Disabled
                 </a>
               </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
-              <input
-                className="rounded-pill form-control mr-sm-2"
-                type="search"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-              <button
-                className="btn rounded-pill btn-outline-light my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
+            <ul className="form-inline navbar nav my-2 my-lg-0">
+              <Link to="/login">
+                <li className="nav-item active">
+                  <div className="nav-link text-light">Login</div>
+                </li>
+              </Link>
+              <Link to="/register">
+                <li className="nav-item active">
+                  <div className="nav-link text-light">Register</div>
+                </li>
+              </Link>
+            </ul>
           </div>
         </nav>
       </div>
