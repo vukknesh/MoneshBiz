@@ -1,0 +1,94 @@
+import React, { Component } from "react";
+
+import profilepic1 from "./profile1.jpg";
+
+export default class MyProfile extends Component {
+  render() {
+    return (
+      <div>
+        <div className="card">
+          <img
+            src={profilepic1}
+            className="card-img-top rounded"
+            alt="Picture"
+          />
+          <div className="card-body">
+            <h5 className="card-title">User Name</h5>
+            <p className="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">Cras justo odio</li>
+            <li className="list-group-item">Dapibus ac facilisis in</li>
+            <li className="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div className="card-body">
+            <button
+              type="button"
+              class="btn btn-secondary btn-block"
+              data-toggle="modal"
+              data-target="#exampleModalScrollable"
+            >
+              View Profile
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModalScrollable"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalScrollableTitle"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odio quasi doloremque temporibus alias nemo nostrum nulla
+                    adipisci cum laboriosam minus. Aliquid suscipit hic ducimus
+                    eaque ea. Similique reprehenderit officia voluptas! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                    dolorum soluta cupiditate odio similique minima asperiores
+                    autem quia voluptas non, iure et natus ducimus id doloremque
+                    dignissimos quos saepe at. lorem Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Dolorum, perferendis sequi
+                    ipsa dolor iste alias totam odio libero aliquid ducimus,
+                    provident maiores fugit ut. Sunt laboriosam temporibus amet
+                    commodi debitis!
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}

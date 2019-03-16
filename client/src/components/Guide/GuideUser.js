@@ -32,7 +32,7 @@ export default class GuideUser extends Component {
         <div className="card-body">
           <h5 className="card-title">{user.name}</h5>
           <p className="card-text">{user.email}</p>
-          <a href="#" className="btn btn-primary">
+          <a href="/login" className="btn btn-secondary btn-block">
             {user.id}
           </a>
         </div>
