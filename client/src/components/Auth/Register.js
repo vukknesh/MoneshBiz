@@ -3,10 +3,10 @@ import React, { Component } from "react";
 export default class Register extends Component {
   render() {
     return (
-      <div className="container">
-        <form>
-          <div className="form-group">
-            <label for="exampleInputEmail1">Name</label>
+      <div className="container border p-5 bg-light mt-5 mb-5 d-flex">
+        <form className="col-6 mb-5 ">
+          <div className="form-group ">
+            <label htmlFor="exampleInputEmail1">Name</label>
             <input
               type="text"
               className="form-control"
@@ -18,7 +18,7 @@ export default class Register extends Component {
             </small>
           </div>
           <div className="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label htmlFor="exampleInputEmail1">Email address</label>
             <input
               type="email"
               className="form-control"
@@ -31,7 +31,7 @@ export default class Register extends Component {
             </small>
           </div>
           <div className="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label htmlFor="exampleInputPassword1">Password</label>
             <input
               type="password"
               className="form-control"
@@ -40,7 +40,7 @@ export default class Register extends Component {
             />
           </div>
           <div className="form-group">
-            <label for="exampleInputPassword1">Confirm Password</label>
+            <label htmlFor="exampleInputPassword1">Confirm Password</label>
             <input
               type="password"
               className="form-control"

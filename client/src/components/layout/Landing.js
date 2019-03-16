@@ -28,7 +28,7 @@ export default class Landing extends Component {
         <div
           className="modal fade"
           id="exampleModal"
-          tabindex="-1"
+          tabIndex="-1"
           role="dialog"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
@@ -80,7 +80,7 @@ export default class Landing extends Component {
             </div>
           </div>
         </div>
-        <div className="bd-example">
+        <div className="bd-example mb-5">
           <div
             id="carouselExampleCaptions"
             className="carousel slide"

@@ -30,7 +30,7 @@ export default class MyContent extends Component {
       conteudo = <Spinner />;
     } else {
       conteudo = posts.map(post => (
-        <div key={post.id} className="card">
+        <div key={post.id} className="card mb-3">
           <div className="card-header">{post.title}</div>
           <div className="card-body">
             <h5 className="card-title">{post.title}</h5>

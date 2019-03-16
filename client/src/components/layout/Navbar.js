@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
           <Link to="/landing">
             <div className="navbar-brand">Monesh.com</div>
           </Link>

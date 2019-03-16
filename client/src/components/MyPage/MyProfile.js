@@ -27,7 +27,7 @@ export default class MyProfile extends Component {
           <div className="card-body">
             <button
               type="button"
-              class="btn btn-secondary btn-block"
+              className="btn btn-secondary btn-block"
               data-toggle="modal"
               data-target="#exampleModalScrollable"
             >
@@ -35,29 +35,35 @@ export default class MyProfile extends Component {
             </button>
 
             <div
-              class="modal fade"
+              className="modal fade"
               id="exampleModalScrollable"
-              tabindex="-1"
+              tabIndex="-1"
               role="dialog"
               aria-labelledby="exampleModalScrollableTitle"
               aria-hidden="true"
             >
-              <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalScrollableTitle">
+              <div
+                className="modal-dialog modal-dialog-scrollable"
+                role="document"
+              >
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5
+                      className="modal-title"
+                      id="exampleModalScrollableTitle"
+                    >
                       Modal title
                     </h5>
                     <button
                       type="button"
-                      class="close"
+                      className="close"
                       data-dismiss="modal"
                       aria-label="Close"
                     >
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">
+                  <div className="modal-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Odio quasi doloremque temporibus alias nemo nostrum nulla
                     adipisci cum laboriosam minus. Aliquid suscipit hic ducimus
@@ -71,15 +77,15 @@ export default class MyProfile extends Component {
                     provident maiores fugit ut. Sunt laboriosam temporibus amet
                     commodi debitis!
                   </div>
-                  <div class="modal-footer">
+                  <div className="modal-footer">
                     <button
                       type="button"
-                      class="btn btn-secondary"
+                      className="btn btn-secondary"
                       data-dismiss="modal"
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" className="btn btn-primary">
                       Save changes
                     </button>
                   </div>
